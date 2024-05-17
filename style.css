@@ -1,0 +1,56 @@
+{ 
+    margin: 0;
+    padding: 0
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-wrap: wrao;
+    justify-content: space-around;
+    padding: 10px;
+}
+.item {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: aquamarine;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+ }
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(146, 87, 14);
+}
+header {
+    background-color: azure;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul [
+    list-style: none;
+    padding: 0;
+]
+nav ul li {
+    display: block;
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: navajowhite;
+    color: black;
+}
+main {
+    padding: 25px;
+}
+footer {
+    position: static;
+    width: 90%;
+    color: blueviolet;
+    background-color: none;
+}
