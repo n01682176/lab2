@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgreen;
+        }
+
+        header {
+            background-color:lightcoral;
+            color: solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: lightpink;
+            margin: 0 10px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        section div {
+            background-color:lightpink;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            min-width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        section div:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color:darkred;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: lightsalmon;
+            color: darkblue;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section div:nth-child(odd) {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <link rel="stylesheet" href="styles.css"> 
+        </nav>
+    </header>
+
+    <section id="about">
+        <div>
+            <h2>I'm Apeksha...</h2>
+            <p>Nowadays, I'm pursuing my computer Programming diploma at HUMBER COLLEGE(Canada).</p>
+            <p>I want to build a career in IT field.</p>
+            <p>Basically, I'm from India.</p>
+        </div>
+
+        <div>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Dancing</li>
+                <li>Reading Books</li>
+                <li>Painting</li>
+                <li>Exploring new things</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Skills</h2>
+            <ul>
+                <li>Multilingual</li>
+                <li>Editing</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+<footer>These are some points about me</footer>
+    </section>
+</body>
+</html>

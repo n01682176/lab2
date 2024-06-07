@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Hub</title>
+<style>
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--margin-medium);
+}
+
+.card {
+    background-color: lightblue;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: var(--margin-medium);
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+.card h3 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--margin-small);
+}
+.card p {
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+header {
+    background-color:lightgreen;
+    color: darkgreen;
+    padding: 20px;
+}
+
+nav {
+    background-color:lightpink;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    width: 70%;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: lightcyan;
+    padding: 20px;
+    position: relative;
+}
+
+footer {
+    background-color: lightgreen;
+    color: darkgreen;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 30%;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .content, .sidebar {
+        width: 100%;
+    }
+}
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    margin-top: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #555;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+ <header>
+        <h1>Welcome to Music Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#artists">Featured Artists</a></li>
+                <li><a href="#instruments">Instruments</a></li>
+            </ul>
+        </nav>
+    </header>
+ <section id="genres">
+        <h2>Music Genres</h2>
+        <article>
+            <h3>Rock</h3>
+            <p>Rock music is famous for having a strong backbeat, usually in 4/4 rhythm, although more progressive styles can employ trickier time signatures.</p>
+        </article>
+        <article>
+            <h3>Pop</h3>
+            <p>Pop music is an abbreviation of the word 'popular. ' It's a contemporary form of music that appeals to a very wide audience.</p>
+        </article>
+    </section>
+<section id="artists">
+        <h2>Featured Artists</h2>
+        <article>
+            <h3>arjit singh</h3>
+            <p>Arijit Singh was born on 25 April 1987 in Jiaganj, Murshidabad, West Bengal to Kakkar Singh, a Punjabi Sikh father and Aditi Singh, a Bengali Hindu mother. His paternal family came from Lahore during the Partition. He began his music training at a very young age at home.</p>
+        </article>
+        <article>
+            <h3>udit narayan</h3>
+            <p>Udit Narayan Jha credited as Udit Narayan (born 1 December 1955)is an established Indian playback singer who works in Bollywood and whose songs have been featured mainly in Nepali and Bollywood movies. He has won three National Film Awards and five Filmfare Awards.</p>
+        </article>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    </section>
+ <section id="instruments">
+        <h2>Instruments</h2>
+        <article>
+            <h3>Guitar</h3>
+            <p>Description about guitar...</p>
+        </article>
+        <article>
+            <h3>Piano</h3>
+            <p>Description about piano...</p>
+        </article>
+    </section>
+    <div class="card-container">
+        <div class="card">
+            <img src="album1.jpg" alt="Album 1">
+            <h3>Album 1</h3>
+            <p>Description about album 1...</p>
+        </div>
+        <div class="card">
+            <img src="album2.jpg" alt="Album 2">
+            <h3>Album 2</h3>
+            <p>Description about album 2...</p>
+        </div>
+    </div>
+    <section class="content">
+        <h2>Image Gallery</h2>
+        <div class="image-gallery">
+            <img src="https://images.app.goo.gl/PYqUyWYrWucAdrrj6" alt="Image 1">
+            <img src="https://images.app.goo.gl/mauqpyM4YvcH9J857" alt="Image 2">
+            <img src="https://images.app.goo.gl/ocnG13uYZyB1UPSa7" alt="Image 3">
+        </div>
+        <h2>Audio Clips</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <h2>Music Videos</h2>
+        <div class="video-container">
+            <iframe src="https://youtu.be/RLzC55ai0eo?si=yFywHWLeTqVr49tZ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <main>
+            <button class="button">Hover over me</button>
+            <a href="#" class="button">Hover over me</a>
+        </main>
+     <footer>
+        <p>&copy; 2024 Music Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
